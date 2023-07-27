@@ -1,0 +1,22 @@
+.debug #site_header {
+    background-color: #2e5ce7;
+    height: 70px;
+}
+
+.debug #site_main {
+    background-color: #f3983e;
+    height: 100vh;
+}
+
+.debug .sidebar {
+    background-color: #2ff32f;
+    width: 150px;
+    height: 100%
+}
+
+.debug .banner_top {
+    background-color: #de2ee7;
+    width: calc(100vw - 150px);
+    height: 100px;
+}
+
