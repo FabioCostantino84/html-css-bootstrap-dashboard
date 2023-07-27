@@ -16,7 +16,6 @@
 
 .debug .banner_top {
     background-color: #de2ee7;
-    width: calc(100vw - 150px);
     height: 100px;
 }
 .debug .col{
