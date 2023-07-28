@@ -22,3 +22,20 @@
     background-color: #f351a6;
     height: 200px;
 }
+
+/* common */
+:root{
+    --bs-primary-darker: #051e34;
+}
+
+/* #region main */
+
+/* sidebar */
+aside {
+    background-image: url("../img/sidebar-bg.png");
+    background-color: var(--bs-primary-darker);
+}
+
+
+/* #endregion main */
+
