@@ -8,15 +8,14 @@
     height: 100vh;
 }
 
-.debug .sidebar {
+/* .debug aside {
     background-color: #2ff32f;
     width: 150px;
     height: 100%
-}
+} */
 
 .debug .banner_top {
-    background-color: #de2ee7;
-    height: 100px;
+    background-color: var(--bs-primary);
 }
 .debug .col{
     background-color: #f351a6;
@@ -26,6 +25,7 @@
 /* common */
 :root{
     --bs-primary-darker: #051e34;
+    --bs-primary: #1b72e8;
 }
 
 /* #region main */
@@ -34,6 +34,10 @@
 aside {
     background-image: url("../img/sidebar-bg.png");
     background-color: var(--bs-primary-darker);
+}
+
+.banner_top{
+    background-color: var(--bs-primary);
 }
 
 
