@@ -1,45 +1,74 @@
-/* .debug #site_header {
-    background-color: #2e5ce7;
+/* #region common */
+:root {
+    --bs-light: rgb(229, 229, 229);
+    --bs-lighter: rgb(248, 249, 250);
+    --bs-primary-darker: rgb(5, 30, 52);
+    --bs-primary-dark: rgb(22, 91, 186);
+    --bs-primary: rgb(27, 114, 232);
+}
+
+#site_header {
     height: 70px;
-} */
-
-.debug #site_main {
-    background-color: #f3983e;
-    height: 100vh;
+    background-color: var(--bs-lighter);
 }
 
-/* .debug aside {
-    background-color: #2ff32f;
-    width: 150px;
-    height: 100%
-} */
-
-.debug .banner_top {
-    background-color: var(--bs-primary);
-}
-.debug .col{
-    background-color: #f351a6;
-    height: 200px;
+#site_main {
+    height: calc(100vh - 70px);
 }
 
-/* common */
-:root{
-    --bs-primary-darker: #051e34;
-    --bs-primary: #1b72e8;
-}
-
-/* #region main */
-
-/* sidebar */
-aside {
+.sidebar {
     background-image: url("../img/sidebar-bg.png");
     background-color: var(--bs-primary-darker);
 }
 
-.banner_top{
+/* #endregion common */
+
+
+
+
+/* #region main */
+
+#banner .offcanvas.offcanvas-end.ms_w-100 {
+    width: 100%;
+}
+
+#banner {
     background-color: var(--bs-primary);
+}
+
+#banner span.badge {
+    background-color: var(--bs-primary-dark);
+}
+
+td button {
+    margin: 0 0.25rem;
 }
 
 
 /* #endregion main */
 
+
+
+
+
+/* #region effects */
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s;
+}
+
+
+#banner .badge:hover {
+    transition: background-color 0.3s;
+    background-color: var(--bs-primary-darker);
+}
+
+/* #endregion effects */
+
+
+@media screen and (min-width: 992px) {
+    #banner .offcanvas.offcanvas-end.ms_w-lg-50 {
+        width: 50%;
+    }
+}
